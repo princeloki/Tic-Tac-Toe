@@ -1,0 +1,123 @@
+button{
+    background: none;
+    width: 13%;
+    height: 3em;
+    margin: 0;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    -webkit-animation-name: bounce;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: cubic-bezier(
+    .5, 0.05, 1, .5);
+    -webkit-animation-iteration-count: infinite;
+}
+
+.wrap{
+    color: rgb(206, 71, 71);
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+.box{
+    background: #dddddd;
+    width: 100%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.box:hover{
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    -webkit-animation-name: bounce2;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: cubic-bezier(
+    .5, 0.05, 1, .5);
+    -webkit-animation-iteration-count: infinite;
+}
+.box1 { grid-area: 1 / 1 / 2 / 2; }
+.box2 { grid-area: 1 / 2 / 2 / 3; }
+.box3 { grid-area: 2 / 2 / 3 / 3; }
+.box4 { grid-area: 3 / 2 / 4 / 3; }
+.box5 { grid-area: 3 / 3 / 4 / 4; }
+.box6 { grid-area: 2 / 3 / 3 / 4; }
+.box7 { grid-area: 1 / 3 / 2 / 4; }
+.box8 { grid-area: 1 / 4 / 2 / 5; }
+.box9 { grid-area: 2 / 4 / 3 / 5; }
+.box10 { grid-area: 3 / 4 / 4 / 5; }
+.box1,.box11{
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 0 0 #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.box11:hover{
+    box-shadow: 0 0 0 0 #fff;
+}
+
+.box1:hover{
+    box-shadow: 0 0 0 0 #fff;
+}
+
+.box h1{
+    margin: 0;
+    font-size: 2em;
+}
+
+.box p{
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgb(206, 71, 71)
+}
+
+
+.box h2{
+    text-align: center;
+    vertical-align: center;
+    border: none;
+    font-weight: bold;
+    background: #dddddd;
+    font-size: 5em;
+    margin-top: 0.6em;
+}
+
+.box input:hover{
+    cursor: pointer;
+}
+
+ @keyframes bounce {
+            from {
+                transform: translate3d(0, 0, 0);
+            }
+            to {
+                transform: translate3d(0, 10px, 0);
+            }
+        }
+
+@keyframes bounce2 {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 5px, 0);
+    }
+}
